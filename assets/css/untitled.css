@@ -1,3 +1,6 @@
-html {
+.product1{
+  height: 100px;
+  width: 100px;
+  border: 2px;
+  border-color: black;
 }
-
