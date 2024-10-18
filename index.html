@@ -86,28 +86,56 @@
 
 <body>
     <!-- Start: Navbar Centered Links -->
-    <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav" style="padding-bottom: 26px;margin-bottom: -16px;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="margin-right: 113px;margin-left: -22px;padding-right: 0px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="margin-right: 13px;"></span></button><img src="assets/img/brands/ESSENTIA UPDATED LOGO.png" width="152" height="64">
+    <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="assets/img/brands/ESSENTIA UPDATED LOGO.png" width="152" height="64" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcol-1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><strong><span style="color: rgb(0, 0, 0);">Products</span></strong></a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="essential_oil.html">Essential Oil</a>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><strong>Products</strong></a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="essential_oil.html">Essential Oil</a>
                             <a class="dropdown-item" href="fragrance_oil.html">Fragrance Oil</a>
                             <a class="dropdown-item" href="fragrances.html">Fragrances</a>
                             <a class="dropdown-item" href="food_flavor.html">Food Flavor</a>
-                            <a class="dropdown-item" href="natural food color.html">Natural Food Flavor</a>
-                            <a class="dropdown-item" href="flavor&seasonings.html"> Flavours &amp; Seasonings</a>
-                            <a class="dropdown-item" href="seasoning custom.html">Seasoning &amp; Customized Spice Blend</a></div>
+                            <a class="dropdown-item" href="natural_food_color.html">Natural Food Flavor</a>
+                            <a class="dropdown-item" href="flavor&seasonings.html">Flavours & Seasonings</a>
+                            <a class="dropdown-item" href="seasoning_custom.html">Seasoning & Customized Spice Blend</a>
+                        </div>
                     </li>
-                   
-                    <li class="nav-item"><a class="nav-link active" href="founder.html">About us</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contacts.html">Contact&nbsp;</a></li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="founder.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacts.html">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('mainNav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('navbar-shrink');
+            } else {
+                navbar.classList.remove('navbar-shrink');
+            }
+        });
+    </script>
+    
 
     <!-- End: Navbar Centered Links -->
     <!-- <header class="bg-primary-gradient"> -->
@@ -133,66 +161,55 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
+    <div class="container" style="width: 100%;">
+        <div class="row" style="width: 100%;">
+            <div class="col-md-12" style="width: 100%;"> <!-- Changed from col-md-8 offset-md-2 to col-md-12 -->
                 <div id="carouselExampleIndicators" 
                      class="carousel slide" 
                      data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/img/brands/Capture.png"
-                                class="d-block w-100" 
-                                 alt="Slide 1">
+                    <div class="carousel-inner" style="width: 100%;">
+                        <div class="carousel-item active" style="width: 100%;">
+                            <img src="assets/img/brands/Capture.png" 
+                                 class="d-block w-100" 
+                                 alt="Slide 1" style="object-fit: cover; height: 500px;">
                         </div>
-
+    
                         <div class="carousel-item">
-                            <img src=
-"assets/img/brands/Capture1cover.PNG"
-                                class="d-block w-100" 
-                                 alt="Slide 2">
+                            <img src="assets/img/brands/Capture1cover.PNG" 
+                                 class="d-block w-100" 
+                                 alt="Slide 2" style="object-fit: cover; height: 500px;">
                         </div>
-
+    
                         <div class="carousel-item" style="width: 100%;">
-                            <img src="assets/img/brands/imghome.png"                    
-                                        class="d-block w-100 " 
-                                 alt="Slide 4">
+                            <img src="assets/img/brands/imghome.png" 
+                                 class="d-block w-100" 
+                                 alt="Slide 4" style="object-fit: cover; height: 500px;">
                         </div>
-
+    
                         <div class="carousel-item">
-                            <img src="assets/img/brands/Capture3cover.PNG"
-                                class="d-block w-100"   
-                                 alt="Slide 3">
+                            <img src="assets/img/brands/Capture3cover.PNG" 
+                                 class="d-block w-100" 
+                                 alt="Slide 3" style="object-fit: cover; height: 500px;">
                         </div>
-
-
                     </div>
                     <button class="carousel-control-prev" 
                             type="button" 
-                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-target="#carouselExampleIndicators" 
                             data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" 
-                              aria-hidden="true">
-                          </span>
-                        <span class="visually-hidden">
-                              Previous
-                          </span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" 
-                            data-bs-target="#carouselExampleIndicators"
+                    <button class="carousel-control-next" 
+                            type="button" 
+                            data-bs-target="#carouselExampleIndicators" 
                             data-bs-slide="next">
-                        <span class="carousel-control-next-icon" 
-                              aria-hidden="true">
-                          </span>
-                        <span class="visually-hidden">
-                              Next
-                          </span>
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
         </div>
     </div>
-
     <!-- Bootstrap Bundle with Popper -->
     <script src=
 "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
